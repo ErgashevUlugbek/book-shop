@@ -5,6 +5,14 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
+    "types": [
+      "node",
+      "webdriverio/sync",
+      "expect-webdriverio",
+      "@wdio/local-runner",
+      "@wdio/jasmine-framework",
+      "@wdio/spec-reporter"
+    ],
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -16,10 +24,7 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "lib": ["es2018", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

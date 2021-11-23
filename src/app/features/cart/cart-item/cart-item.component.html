@@ -1,0 +1,31 @@
+<mat-card class="cart-item" appChangeOnHover *ngIf="isItemRemoved">
+  <mat-card-content>
+    <img src="{{ cartItemBook.book.poster }}" mat-card-image alt="{{ cartItemBook.book.name }}" />
+    <mat-card-title class="book-name">{{ cartItemBook.book.name }}</mat-card-title>
+    <div class="book-quantity">
+      <mat-form-field>
+        <mat-label>Quantity:</mat-label>
+        <input
+          #bookQuantityInput
+          matInput
+          type="number"
+          name="book-quantity"
+          id="book-quantity"
+          min="1"
+          value="{{ cartItemBook.count }}"
+          (click)="changeQuantity()"
+        />
+      </mat-form-field>
+      <strong
+        >Price: <span class="money">{{ cartItemBook.book.price | currency }}</span>
+      </strong>
+      <strong
+        >Total:
+        <span class="money">{{ cartItemBook.count * cartItemBook.book.price | currency }}</span>
+      </strong>
+      <button (click)="removeItemFromStorage()" mat-raised-button color="warn">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>

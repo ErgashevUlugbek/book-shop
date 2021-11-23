@@ -1,0 +1,28 @@
+<main class="catalog container">
+  <div class="book-list">
+    <h1>Catalog is sorted by {{ orderPattern.slice(2) | lowercase }}</h1>
+    <app-books
+      [books]="catalogBooks"
+      [pattern]="orderPattern"
+      [imageVisible]="imageVisible"
+    ></app-books>
+  </div>
+  <aside class="control">
+    <div class="transform-buttons"> 
+      <div class="sort-buttons">
+        <button (click)="sortBy('byName')" title="Sort by name">
+          <mat-icon>sort_by_alpha</mat-icon>
+        </button>
+        <button (click)="sortBy('bySubject')" title="Sort by subject">
+          <mat-icon>book</mat-icon>
+        </button>
+        <button (click)="sortBy('byDate')" title="Sort by date">
+          <mat-icon>calendar_today</mat-icon>
+        </button>
+      </div> 
+      <div class="image-toggle">
+        <button (click)="toggleImage()"><mat-icon>photo</mat-icon></button>
+      </div>
+    </div>
+  </aside>
+</main>

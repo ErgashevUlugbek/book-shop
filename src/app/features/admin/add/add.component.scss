@@ -1,0 +1,15 @@
+@import '../../../shared/styles/variables.scss';
+
+.add {
+  form {
+    display: flex;
+    flex-direction: column;
+    mat-form-field {
+      margin: 10px 0px;
+      background-color: $sp-blue;
+      mat-label {
+        color: $sp-black;
+      }
+    }
+  }
+}

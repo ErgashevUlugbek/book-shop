@@ -1,0 +1,18 @@
+@import '../../../../shared/styles/variables.scss';
+
+.middle-bar-parent {
+  padding: 0 1rem;
+  h2 {
+    text-transform: uppercase;
+  }
+  .books-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    // .single-book {
+      // img {
+      //   width: 100%;
+      // }
+    // }
+  }
+}

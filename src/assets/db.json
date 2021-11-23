@@ -1,0 +1,116 @@
+{
+  "books": [
+    {
+      "name": "Angular 2",
+      "author": "Ari Lerner",
+      "description": "This book teaches Angular 2",
+      "price": 35,
+      "pages": 254,
+      "publishedDate": "2019-11-07",
+      "category": [
+        "FrontEndDevelopment",
+        "Angular2"
+      ],
+      "poster": "../../../../../../assets/books/angular2.PNG",
+      "id": 2
+    },
+    {
+      "name": "C++",
+      "author": "Bjarne Stroustrup",
+      "description": "This book is about C++ language.",
+      "price": 27,
+      "pages": 770,
+      "publishedDate": "1996-10-08",
+      "category": [
+        "ComputerScience",
+        "C++"
+      ],
+      "poster": "../../../../../../assets/books/cplusplus.PNG",
+      "id": 3
+    },
+    {
+      "name": "Java",
+      "author": "James Gosling",
+      "description": "This book is about Java.",
+      "price": 50,
+      "pages": 910,
+      "publishedDate": "1998-04-05",
+      "category": [
+        "ComputerScience",
+        "Java"
+      ],
+      "poster": "../../../../../../assets/books/java.PNG",
+      "id": 4
+    },
+    {
+      "name": "Node js",
+      "author": "Ryan Dahl",
+      "description": "This book teaches Node js.",
+      "price": 30,
+      "pages": 400,
+      "publishedDate": "2016-04-27",
+      "category": [
+        "ComputerScience",
+        "BackEndDevelopment"
+      ],
+      "poster": "../../../../../../assets/books/nodejs.PNG",
+      "id": 5
+    },
+    {
+      "name": "Python",
+      "author": "Guido van Rossum",
+      "description": "This book teaches Python programming language.",
+      "price": 30,
+      "pages": 740,
+      "publishedDate": "1994-01-15",
+      "category": [
+        "ComputerScience",
+        "Python"
+      ],
+      "poster": "../../../../../../assets/books/python.PNG",
+      "id": 6
+    },
+    {
+      "name": "Algorithms",
+      "author": "Aditya Bxargava",
+      "description": "This book is about algorithms.",
+      "price": 10,
+      "pages": 400,
+      "publishedDate": "2002-12-05",
+      "category": [
+        "ComputerScience",
+        "Algorithms"
+      ],
+      "poster": "../../../../../../assets/books/algorithms.PNG",
+      "id": 7
+    },
+    {
+      "name": "AngularJS",
+      "author": "Misko Hevery",
+      "description": "This book instructs AngularJS",
+      "price": 25,
+      "pages": 201,
+      "publishedDate": "2010-10-20",
+      "category": [
+        "FrontEndDevelopment"
+      ],
+      "poster": "../../../../../../assets/books/angularjs.PNG",
+      "sold": 0,
+      "id": 8
+    },
+    {
+      "name": "Android",
+      "author": "Endi Rubin",
+      "description": "This book is about Android development",
+      "price": 50,
+      "pages": 1319,
+      "publishedDate": "2008-09-23",
+      "category": [
+        "AndroidDevelopment"
+      ],
+      "poster": "../../../../../../assets/books/android.PNG",
+      "sold": 0,
+      "id": 9
+    }
+  ]
+}

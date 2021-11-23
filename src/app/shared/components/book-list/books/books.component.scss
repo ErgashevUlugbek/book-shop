@@ -1,0 +1,68 @@
+@import '../../../styles/variables.scss';
+
+.book {
+  padding: 10px;
+  border-bottom: 1px solid $sp-gray;
+  display: flex;
+  justify-content: space-between;
+  .info {
+    display: flex;
+    justify-content: space-between;
+    .book-image {
+      max-width: 200px;
+      max-height: 250px;
+    }
+    .book-name a {
+      color: $sp-black;
+
+      &:visited {
+        color: $sp-light-gray;
+      }
+    } 
+
+    .book-date {
+      color: $sp-light-gray;
+    }
+
+    .book-author {
+      color: $sp-gray;
+
+      h2 {
+        margin: 0;
+      }
+    }
+
+    .book-price {
+      color: $sp-purple;
+    }
+  }
+
+  .manage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .edit-button, .delete-button {
+      color: $sp-white;
+      padding: 0.25rem 0.5rem;
+      font-size: 1rem;
+      font-weight: 400;
+      border-radius: 5px;
+      border-style: groove;
+    }
+
+    .edit-button {
+      background-color: $sp-blue;
+      border-color: $sp-blue;
+      a {
+        color: $sp-white;
+      }
+    }
+
+    .delete-button {
+      background-color: $sp-red;
+      border-color: $sp-red;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../../shared/styles/variables.scss';
+
+.right-bar {
+  .live-project {
+    background-color: $sp-purple;
+    color: $sp-white;
+    h2 {
+      background-color: $sp-white;
+      text-align: center;
+      color: $sp-purple;
+    }
+
+    ul {
+      li {
+        padding: 10px 0;
+        a {
+          color: $sp-white;
+        }
+      }
+    }
+  }
+}

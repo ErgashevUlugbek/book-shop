@@ -1,0 +1,15 @@
+@import '../../../shared/styles/variables.scss';
+
+.admin-panel {
+    div {
+        margin: 1rem 0;
+        a {
+            font-size: 1.25rem;
+            color: $sp-purple;
+            text-transform: capitalize;
+            &:visited {
+                color: $sp-gray;
+            }
+        }
+    }
+}

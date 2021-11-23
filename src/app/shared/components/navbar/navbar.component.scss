@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+nav {
+  ul {
+    display: flex;
+    li {
+      a {
+        padding: 10px;
+        display: block;
+        font-weight: bolder;
+        color: $sp-black;
+        text-transform: uppercase;
+        &:hover {
+          background-color: $sp-light-blue;
+        }
+      }
+
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+  }
+}

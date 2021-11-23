@@ -1,0 +1,234 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "Algorithms",
+      "author": "John Sallivan",
+      "description": "This book teaches algorithms.",
+      "price": 10,
+      "pages": 216,
+      "publishedDate": "2010-10",
+      "category": ["Computer science", "Algorithms"],
+      "poster": "../../../../../../assets/books/algorithms.PNG",
+      "reviews": [
+        {
+          "author": "Filip",
+          "reviewDate": "2018-10-8",
+          "review": "A little old"
+        },
+        {
+          "author": "Jasmine",
+          "reviewDate": "2012-5-8",
+          "review": "Good"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "C++",
+      "author": "Denis Ritchi",
+      "description": "This book teaches C++.",
+      "price": 16,
+      "pages": 987,
+      "publishedDate": "2010-10",
+      "category": ["Computer science", "C++"],
+      "poster": "../../../../../../assets/books/cplusplus.PNG",
+      "reviews": [
+        {
+          "author": "Filip",
+          "reviewDate": "2010-10",
+          "review": "A little old"
+        },
+        {
+          "author": "Jasmine",
+          "reviewDate": "2010-10",
+          "review": "Good"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Angular 2",
+      "author": "Joe Eames",
+      "description": "This book teaches Angular 2.",
+      "price": 30,
+      "pages": 200,
+      "publishedDate": "2010-10",
+      "category": ["Front end development", "Angular 2"],
+      "poster": "../../../../../../assets/books/angular2.PNG",
+      "reviews": [
+        {
+          "author": "Filip",
+          "reviewDate": "2010-10",
+          "review": "A little old"
+        },
+        {
+          "author": "Jasmine",
+          "reviewDate": "2010-10",
+          "review": "Good"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Android",
+      "author": "David Alaba",
+      "description": "This book teaches how to create android app.",
+      "price": 20,
+      "pages": 987,
+      "publishedDate": "2016-10",
+      "category": ["Mobile development", "Android", "Java"],
+      "poster": "../../../../../../assets/books/cplusplus.PNG",
+      "reviews": [
+        {
+          "author": "Filip",
+          "reviewDate": "2018-10",
+          "review": "A little old"
+        },
+        {
+          "author": "Jasmine",
+          "reviewDate": "2019-10",
+          "review": "Good"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "AngularJs",
+      "author": "Will Eames",
+      "description": "This book teaches AngularJS.",
+      "price": 22,
+      "pages": 190,
+      "publishedDate": "2010-10",
+      "category": ["Front end development", "AngularJS"],
+      "poster": "../../../../../../assets/books/angular2.PNG",
+      "reviews": [
+        {
+          "author": "Filip",
+          "reviewDate": "2010-10",
+          "review": "A little old"
+        },
+        {
+          "author": "Jasmine",
+          "reviewDate": "2010-10",
+          "review": "Good"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Bash",
+      "author": "John Bae",
+      "description": "This book teaches Bash.",
+      "price": 10,
+      "pages": 206,
+      "publishedDate": "2015-10",
+      "category": ["Computer science", "Bash"],
+      "poster": "../../../../../../assets/books/algorithms.PNG",
+      "reviews": [
+        {
+          "author": "Filip",
+          "reviewDate": "2018-10-8",
+          "review": "A little old"
+        },
+        {
+          "author": "Jasmine",
+          "reviewDate": "2012-5-8",
+          "review": "Good"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "C",
+      "author": "Denis Ritchi",
+      "description": "This book teaches C programming language.",
+      "price": 25,
+      "pages": 387,
+      "publishedDate": "2000-10",
+      "category": ["Computer science", "C"],
+      "poster": "../../../../../../assets/books/cplusplus.PNG",
+      "reviews": [
+        {
+          "author": "Filip",
+          "reviewDate": "2001-10",
+          "review": "A little old"
+        },
+        {
+          "author": "Jasmine",
+          "reviewDate": "2010-01",
+          "review": "Good"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "C#",
+      "author": "Sammie Eames",
+      "description": "This book teaches Angular 2.",
+      "price": 30,
+      "pages": 400,
+      "publishedDate": "2017-10",
+      "category": ["Computer science", "C#"],
+      "poster": "../../../../../../assets/books/angular2.PNG",
+      "reviews": [
+        {
+          "author": "Filip",
+          "reviewDate": "2010-10",
+          "review": "A little old"
+        },
+        {
+          "author": "Jasmine",
+          "reviewDate": "2010-10",
+          "review": "Good"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Android",
+      "author": "David Alaba",
+      "description": "This book teaches how to create android app.",
+      "price": 20,
+      "pages": 987,
+      "publishedDate": "2016-10",
+      "category": ["Mobile development", "Android", "Java"],
+      "poster": "../../../../../../assets/books/cplusplus.PNG",
+      "reviews": [
+        {
+          "author": "Filip",
+          "reviewDate": "2018-10",
+          "review": "A little old"
+        },
+        {
+          "author": "Jasmine",
+          "reviewDate": "2019-10",
+          "review": "Good"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "AngularJs",
+      "author": "Will Eames",
+      "description": "This book teaches AngularJS.",
+      "price": 22,
+      "pages": 190,
+      "publishedDate": "2010-10",
+      "category": ["Front end development", "AngularJS"],
+      "poster": "../../../../../../assets/books/angular2.PNG",
+      "reviews": [
+        {
+          "author": "Filip",
+          "reviewDate": "2010-10",
+          "review": "A little old"
+        },
+        {
+          "author": "Jasmine",
+          "reviewDate": "2010-10",
+          "review": "Good"
+        }
+      ]
+    }
+  ]
+}

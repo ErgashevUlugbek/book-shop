@@ -1,0 +1,97 @@
+<form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="legacy">
+    <mat-label>Enter book name:</mat-label>
+    <input type="text" formControlName="bookName" matInput required />
+  </mat-form-field>
+  <div *ngIf="bookName && bookName.errors">
+    <div class="alert" *ngIf="bookName.invalid && (bookName.dirty || bookName.touched)">
+      <div *ngIf="bookName.errors.required">Book name is required.</div>
+      <div *ngIf="bookName.errors.minlength">
+        Book name must be at least {{ bookName.errors.minlength.requiredLength }} characters long.
+      </div>
+      <div *ngIf="bookName.errors.maxlength">
+        Book name must be less than {{ bookName.errors.maxlength.requiredLength }} characters long.
+      </div>
+    </div>
+  </div>
+  <mat-form-field appearance="legacy">
+    <mat-label>Enter book author:</mat-label>
+    <input type="text" formControlName="bookAuthor" matInput required />
+  </mat-form-field>
+  <div *ngIf="bookAuthor && bookAuthor.errors">
+    <div class="alert" *ngIf="bookAuthor.invalid && (bookAuthor.dirty || bookAuthor.touched)">
+      <div *ngIf="bookAuthor.errors.required">Author name is required.</div>
+      <div *ngIf="bookAuthor.errors.minlength">
+        Author name must be at least {{ bookAuthor.errors.minlength.requiredLength }} characters
+        long.
+      </div>
+      <div *ngIf="bookAuthor.errors.maxlength">
+        Author name must be less than {{ bookAuthor.errors.maxlength.requiredLength }} characters
+        long.
+      </div>
+    </div>
+  </div>
+  <mat-form-field appearance="legacy">
+    <mat-label>Enter book description:</mat-label>
+    <textarea type="text" formControlName="bookDescription" matInput required></textarea>
+  </mat-form-field>
+  <div *ngIf="bookDescription && bookDescription.errors">
+    <div
+      class="alert"
+      *ngIf="bookDescription.invalid && (bookDescription.dirty || bookDescription.touched)"
+    >
+      <div *ngIf="bookDescription.errors.required">Book description is required.</div>
+      <div *ngIf="bookDescription.errors.minlength">
+        Book description must be at least
+        {{ bookDescription.errors.minlength.requiredLength }} characters long.
+      </div>
+      <div *ngIf="bookDescription.errors.maxlength">
+        Book description must be less than
+        {{ bookDescription.errors.maxlength.requiredLength }} characters long.
+      </div>
+    </div>
+  </div>
+  <mat-form-field appearance="legacy">
+    <mat-label>Enter book price($):</mat-label>
+    <input type="number" name="book-price" formControlName="bookPrice" matInput required />
+  </mat-form-field>
+  <div *ngIf="bookPrice && bookPrice.errors">
+    <div class="alert" *ngIf="bookPrice.invalid && (bookPrice.dirty || bookPrice.touched)">
+      <div *ngIf="bookPrice.errors.required">Book price is required.</div>
+      <div *ngIf="bookPrice.errors.min">
+        Book price must be at least ${{ bookPrice.errors.min.min }}.
+      </div>
+      <div *ngIf="bookPrice.errors.max">
+        Book price must be less than ${{ bookPrice.errors.max.max }}.
+      </div>
+    </div>
+  </div>
+  <mat-form-field appearance="legacy">
+    <mat-label>Enter book pages:</mat-label>
+    <input type="number" formControlName="bookPages" matInput required />
+  </mat-form-field>
+  <div *ngIf="bookPages && bookPages.errors">
+    <div class="alert" *ngIf="bookPages.invalid && (bookPages.dirty || bookPages.touched)">
+      <div *ngIf="bookPages.errors.required">Book pages is required.</div>
+      <div *ngIf="bookPages.errors.min">
+        Book pages must be at least {{ bookPages.errors.min.min }}.
+      </div>
+      <div *ngIf="bookPages.errors.max">
+        Book pages must be less than {{ bookPages.errors.max.max }}.
+      </div>
+    </div>
+  </div>
+  <mat-form-field appearance="legacy">
+    <mat-label>Enter book published date:</mat-label>
+    <input type="date" formControlName="bookPublishedDate" matInput required />
+  </mat-form-field>
+  <mat-form-field appearance="legacy">
+    <mat-label>Enter categories:</mat-label>
+    <input type="text" formControlName="bookCategories" matInput required />
+  </mat-form-field>
+  <mat-form-field appearance="legacy">
+    <mat-label>Enter poster:</mat-label>
+    <input type="text" formControlName="bookPoster" matInput required />
+  </mat-form-field>
+  <button type="submit" mat-raised-button color="accent">Submit</button>
+</form>

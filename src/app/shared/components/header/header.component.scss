@@ -1,0 +1,58 @@
+@import '../../styles/variables.scss';
+
+header {
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      img {
+        padding: 10px;
+      }
+    }
+
+    .search {
+      display: flex;
+      flex-grow: 1;
+      padding: 10px;
+      input {
+        width: 100%;
+        padding: 0px 10px;
+      }
+
+      button.search-button {
+        border-left: none;
+        border-radius: 0;
+      }
+    }
+
+    .cart-button {
+      background-color: $sp-light-blue;
+
+      a {
+        padding-top: 10px;
+        color: $sp-white;
+
+        mat-icon {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+
+  .quote {
+    padding: 2rem 1rem;
+    margin: 1rem initial;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    background-color: $sp-black;
+    color: $sp-white;
+    .author {
+      font-size: 1.5rem;
+      float: right;
+      font-style: italic;
+      color: $sp-orange;
+    }
+  }
+}

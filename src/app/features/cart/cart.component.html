@@ -1,0 +1,23 @@
+<div class="cart container">
+  <div *ngIf="cartItems.length != 0; else noCartItemsBlock">
+    <div class="books" *ngFor="let book of cartItems">
+      <app-cart-item
+        [cartItemBook]="book"
+        (passTotalPrice)="changeTotalPrice($event)"
+      ></app-cart-item>
+    </div>
+  </div>
+  <ng-template #noCartItemsBlock>
+    <h1>There is no items</h1>
+  </ng-template>
+  <div class="total-price">
+    <strong
+      >Total price: <span class="money">{{ totalPrice | currency }}</span></strong
+    >
+  </div>
+  <div class="remove-all">
+    <button (click)="removeAllItems()" mat-raised-button color="warn">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</div>

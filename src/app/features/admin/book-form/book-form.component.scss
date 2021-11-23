@@ -1,0 +1,31 @@
+@import '../../../shared/styles/variables.scss';
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  mat-form-field {
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: $sp-black;
+    mat-label {
+      color: $sp-white;
+    }
+
+    input,
+    textarea {
+      color: $sp-white;
+    }
+  }
+
+  div {
+    div.alert {
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 0.5rem;
+      background-color: rgba($sp-red, 0.9);
+      color: $sp-white;
+    }
+  }
+}

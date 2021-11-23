@@ -1,0 +1,19 @@
+@import '../../../shared/styles/variables.scss';
+
+main {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+
+  app-left-bar-parent {
+    width: 25%;
+  }
+
+  app-middle-bar-parent {
+    width: 50%;
+  }
+
+  app-right-bar-parent {
+    width: 25%;
+  }
+}

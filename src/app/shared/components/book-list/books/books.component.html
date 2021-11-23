@@ -1,0 +1,27 @@
+<div class="book" *ngFor="let book of books | orderBy: pattern:false" appChangeOnHover>
+  <div class="info">
+    <div class="book-image" *ngIf="imageVisible">
+      <img src="{{ book.poster }}" alt="" />
+    </div>
+    <div class="details">
+      <div class="book-name">
+        <h1>
+        <a [routerLink]="['/catalog', book.id]"
+          >{{ book.name }}</a
+        >
+      </h1>
+      </div>
+      <div class="book-author">
+        <h2>{{ book.author }}</h2>
+      </div>
+      <div class="book-date">{{ book.publishedDate | date: 'MMMM, yyyy' }}</div>
+      <div class="book-price"><h2>{{ book.price | currency }}</h2></div>
+    </div>
+  </div>
+  <div *ngIf="adminPage" class="manage">
+    <div>
+      <button class="edit-button"><a [routerLink]="['edit/', book.id]">Edit</a></button>
+    </div>
+    <div><button class="delete-button" (click)="deleteBook(book)">Delete</button></div>
+  </div>
+</div> 

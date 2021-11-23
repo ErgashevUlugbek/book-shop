@@ -1,0 +1,16 @@
+<div class="book-section container" *ngIf="targetBook">
+  <div class="info">
+    <div class="book-name">Book name: {{ targetBook.name }}</div>
+    <div class="book-author">Book author: {{ targetBook.author }}</div>
+    <div class="book-date">Published {{ getPublishedDate(targetBook.publishedDate) }}</div>
+    <div class="book-description">Book description: {{ targetBook.description }}</div>
+    <div class="book-price" [ngStyle]="checkCostStyles">
+      Book price: {{ targetBook.price | currency }}
+    </div> 
+    <div class="book-made">Made: {{ targetBook.publishedDate | date: 'MMMM, yyyy' }}</div>
+    <div>
+      <button (click)="onBuy()" mat-raised-button color="primary">Buy Ebook</button>
+    </div>
+  </div>
+  <div class="reviews"></div>
+</div>

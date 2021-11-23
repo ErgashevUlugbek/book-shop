@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.viewed-books {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -300px;
+  width: 300px;
+  background-color: $sp-yellow;
+
+  .viewed-books-content {
+    overflow: scroll;
+    padding: 20px;
+    height: 80%;
+
+    button {
+      margin: 10px 0;
+    }
+  }
+  .viewed-books-button[mat-raised-button] {
+    width: 75px;
+    word-wrap: wrap;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: -75px;
+  }
+}
+
+.open {
+  right: 0;
+}

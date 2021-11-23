@@ -1,0 +1,34 @@
+@import '../../styles/variables.scss';
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+
+  .book-list {
+    width: 70%;
+  }
+ 
+  .control {
+    width: 20%;
+
+    .transform-buttons {
+      display: flex;
+      justify-content: space-between;
+      .sort-buttons {
+        gap: 10px;
+        display: flex;
+        justify-content: space-between;
+        
+      }
+
+      button {
+        border-radius: 5px;
+        background-color: $sp-orange;
+        border-color: $sp-orange;
+        color: $sp-white;
+      }
+      
+    }
+  }
+}

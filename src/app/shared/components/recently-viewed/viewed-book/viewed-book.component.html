@@ -1,0 +1,6 @@
+<mat-card-content *ngFor="let book of books" class="single-book">
+  <img src="{{ book.poster }}" mat-card-image alt="{{ book.name }}" />
+  <p>{{ book.name }}</p>
+  <p>{{ book.price | currency }}</p>
+  <p>{{ book.whenViewed.viewedInfo }}</p>
+</mat-card-content>

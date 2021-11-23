@@ -1,0 +1,21 @@
+<div class="viewed-books">
+  <button
+    class="viewed-books-button"
+    mat-raised-button
+    color="primary"
+    appOpenCloseRecentlyViewed
+    (click)="calculateViewedTime()"
+  >
+    Recently viewed
+  </button>
+  <mat-card class="viewed-books-content">
+    <mat-card-header>
+      <mat-card-title>Viewed books</mat-card-title>
+    </mat-card-header>
+    <hr />
+    <mat-card-actions>
+      <button mat-raised-button color="warn" (click)="clear()">Clear</button>
+    </mat-card-actions>
+    <app-viewed-book [books]="viewedBooks"></app-viewed-book>
+  </mat-card>
+</div>

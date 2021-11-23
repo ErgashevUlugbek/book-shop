@@ -1,0 +1,29 @@
+<header>
+  <div class="header-top container">
+    <div class="logo">
+      <a routerLink="/">
+        <img src="../../../../assets/main-logo.svg" alt="main-logo" />
+      </a>
+    </div>
+    <div class="search">
+      <input type="search" name="search" id="search" placeholder="Search" />
+      <button mat-raised-button class="search-button">
+        <mat-icon aria-hidden="false">search</mat-icon>
+      </button>
+    </div>
+    <button class="cart-button" mat-raised-button color="primary">
+      <a routerLink="/cart">
+        <mat-icon aria-hidden="false">shopping_cart</mat-icon>
+      </a>
+    </button>
+  </div>
+  <app-navbar></app-navbar>
+  <hr />
+  <div class="quote container" *ngIf="quotes$ | async as quotes">
+    <blockquote>
+      {{ quotes[randomNumber].text }}
+    </blockquote>
+    <div class="author">{{ quotes[randomNumber].author }}</div>
+  </div>
+</header>
+<router-outlet></router-outlet>

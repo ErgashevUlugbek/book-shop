@@ -4,9 +4,9 @@ main {
   padding: 20px 0;
   display: grid;
   grid-template-areas:
-    'left-side center right-side'
-    'left-side center right-side'
-    'left-side center right-side';
+    'left-side center center right-side'
+    'left-side center center right-side'
+    'left-side center center right-side';
   gap: 1rem;
 
   .left-side {

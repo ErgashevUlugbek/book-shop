@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MiddleBarParentComponent } from './middle-bar-parent.component';
+import { RecentReleasesComponent } from './recent-releases.component';
 
-describe('MiddleBarParentComponent', () => {
-  let component: MiddleBarParentComponent;
-  let fixture: ComponentFixture<MiddleBarParentComponent>;
+describe('RecentReleasesComponent', () => {
+  let component: RecentReleasesComponent;
+  let fixture: ComponentFixture<RecentReleasesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MiddleBarParentComponent ]
+      declarations: [ RecentReleasesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MiddleBarParentComponent);
+    fixture = TestBed.createComponent(RecentReleasesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

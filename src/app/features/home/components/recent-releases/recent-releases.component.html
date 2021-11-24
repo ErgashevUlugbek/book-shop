@@ -1,0 +1,8 @@
+<div class="recent-releases">
+  <h2>recent releases</h2>
+  <div class="books-wrapper">
+    <div *ngFor="let book of books | orderBy: 'byName':true" class="book">
+      <a [routerLink]="['catalog/', book.id]"><img [src]="book.poster" alt="{{ book.id }}" /></a>
+    </div>
+  </div>
+</div>

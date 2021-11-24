@@ -2,18 +2,50 @@
 
 main {
   padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-areas:
+    'left-side center right-side'
+    'left-side center right-side'
+    'left-side center right-side';
+  gap: 1rem;
 
   .left-side {
-    width: 25%;
+    grid-area: left-side;
+    padding: 1rem 0;
   }
 
-  app-middle-bar-parent {
-    width: 50%;
+  .center {
+    grid-area: center;
   }
 
-  app-right-bar-parent {
-    width: 25%;
+  .right-side {
+    grid-area: right-side;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  main {
+    grid-template-areas:
+      'center center right-side'
+      'center center right-side'
+      'left-side left-side .';
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    grid-template-areas:
+      'center center center center'
+      'left-side left-side right-side right-side'
+      'left-side left-side right-side right-side';
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-areas:
+      'center center'
+      'left-side left-side'
+      'right-side right-side';
   }
 }

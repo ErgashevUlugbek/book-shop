@@ -1,0 +1,19 @@
+.recent-releases {
+  padding: 1rem 0;
+  h2 {
+    text-transform: uppercase;
+  }
+
+  .books-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    .book {
+      img {
+        height: 300px;
+      }
+    }
+  }
+}

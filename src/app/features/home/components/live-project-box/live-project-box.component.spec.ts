@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RightBarComponent } from './right-bar.component';
+import { LiveProjectBoxComponent } from './live-project-box.component';
 
-describe('RightBarComponent', () => {
-  let component: RightBarComponent;
-  let fixture: ComponentFixture<RightBarComponent>;
+describe('LiveProjectBoxComponent', () => {
+  let component: LiveProjectBoxComponent;
+  let fixture: ComponentFixture<LiveProjectBoxComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RightBarComponent ]
+      declarations: [ LiveProjectBoxComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RightBarComponent);
+    fixture = TestBed.createComponent(LiveProjectBoxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

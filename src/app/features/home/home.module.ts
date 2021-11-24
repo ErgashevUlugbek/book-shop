@@ -8,6 +8,7 @@ import { BestsellersComponent } from './components/bestsellers/bestsellers.compo
 import { HomeComponent } from './home.component';
 import { FreeContentBoxComponent } from './components/free-content-box/free-content-box.component';
 import { RecentReleasesComponent } from './components/recent-releases/recent-releases.component';
+import { LiveProjectBoxComponent } from './components/live-project-box/live-project-box.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { RecentReleasesComponent } from './components/recent-releases/recent-rel
     HomeComponent,
     FreeContentBoxComponent,
     RecentReleasesComponent,
+    LiveProjectBoxComponent,
   ],
   imports: [CommonModule, HomeRoutingModule, SharedModule],
 })

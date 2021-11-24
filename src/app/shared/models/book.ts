@@ -8,8 +8,8 @@ export interface IBook {
   publishedDate: Date;
   category: string[];
   poster: string;
-  reviews?: IReview[];
   sold: number;
+  reviews?: IReview[];
 }
 
 export interface IReview {

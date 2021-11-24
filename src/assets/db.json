@@ -7,11 +7,9 @@
       "price": 35,
       "pages": 254,
       "publishedDate": "2019-11-07",
-      "category": [
-        "FrontEndDevelopment",
-        "Angular2"
-      ],
+      "category": ["FrontEndDevelopment", "Angular2"],
       "poster": "../../../../../../assets/books/angular2.PNG",
+      "sold": 2332,
       "id": 2
     },
     {
@@ -21,11 +19,9 @@
       "price": 27,
       "pages": 770,
       "publishedDate": "1996-10-08",
-      "category": [
-        "ComputerScience",
-        "C++"
-      ],
+      "category": ["ComputerScience", "C++"],
       "poster": "../../../../../../assets/books/cplusplus.PNG",
+      "sold": 1932,
       "id": 3
     },
     {
@@ -35,11 +31,9 @@
       "price": 50,
       "pages": 910,
       "publishedDate": "1998-04-05",
-      "category": [
-        "ComputerScience",
-        "Java"
-      ],
+      "category": ["ComputerScience", "Java"],
       "poster": "../../../../../../assets/books/java.PNG",
+      "sold": 12004,
       "id": 4
     },
     {
@@ -49,11 +43,9 @@
       "price": 30,
       "pages": 400,
       "publishedDate": "2016-04-27",
-      "category": [
-        "ComputerScience",
-        "BackEndDevelopment"
-      ],
+      "category": ["ComputerScience", "BackEndDevelopment"],
       "poster": "../../../../../../assets/books/nodejs.PNG",
+      "sold": 1004,
       "id": 5
     },
     {
@@ -63,11 +55,9 @@
       "price": 30,
       "pages": 740,
       "publishedDate": "1994-01-15",
-      "category": [
-        "ComputerScience",
-        "Python"
-      ],
+      "category": ["ComputerScience", "Python"],
       "poster": "../../../../../../assets/books/python.PNG",
+      "sold": 19804,
       "id": 6
     },
     {
@@ -77,11 +67,9 @@
       "price": 10,
       "pages": 400,
       "publishedDate": "2002-12-05",
-      "category": [
-        "ComputerScience",
-        "Algorithms"
-      ],
+      "category": ["ComputerScience", "Algorithms"],
       "poster": "../../../../../../assets/books/algorithms.PNG",
+      "sold": 124,
       "id": 7
     },
     {
@@ -91,11 +79,9 @@
       "price": 25,
       "pages": 201,
       "publishedDate": "2010-10-20",
-      "category": [
-        "FrontEndDevelopment"
-      ],
+      "category": ["FrontEndDevelopment"],
       "poster": "../../../../../../assets/books/angularjs.PNG",
-      "sold": 0,
+      "sold": 239,
       "id": 8
     },
     {
@@ -105,11 +91,9 @@
       "price": 50,
       "pages": 1319,
       "publishedDate": "2008-09-23",
-      "category": [
-        "AndroidDevelopment"
-      ],
+      "category": ["AndroidDevelopment"],
       "poster": "../../../../../../assets/books/android.PNG",
-      "sold": 0,
+      "sold": 1324,
       "id": 9
     }
   ]

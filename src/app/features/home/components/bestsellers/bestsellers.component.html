@@ -1,1 +1,8 @@
-<p>bestsellers works!</p>
+<div class="bestsellers">
+  <h2>bestsellers</h2>
+  <div class="books-wrapper">
+    <div *ngFor="let book of books | orderBy: 'bySold':false" class="book">
+      <a [routerLink]="['catalog/', book.id]"><img [src]="book.poster" alt="{{ book.id }}" /></a>
+    </div>
+  </div>
+</div>

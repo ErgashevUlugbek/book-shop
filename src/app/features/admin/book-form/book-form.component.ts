@@ -35,7 +35,9 @@ export class BookFormComponent implements OnInit, OnChanges {
   });
   constructor(private utilsService: UtilsService, private fb: FormBuilder) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('working');
+  }
 
   get bookName() {
     return this.bookForm.get('bookName');
@@ -87,7 +89,7 @@ export class BookFormComponent implements OnInit, OnChanges {
       publishedDate: bookForm.bookPublishedDate,
       category: bookForm.bookCategories.split(' '),
       poster: bookForm.bookPoster,
-      sold: 0
+      sold: 0,
     };
     this.passBookInfo.emit(this.book);
   }

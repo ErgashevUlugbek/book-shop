@@ -10,7 +10,7 @@ export class OrderByPipe implements PipeTransform {
     const year = date.getFullYear();
     const month = date.getMonth() + 1;
     const day = date.getDate();
-    const fullDate = `${year}-${month}-${day}`;    
+    const fullDate = `${year}-${month}-${day}`;
     return Date.parse(fullDate);
   }
 
@@ -45,6 +45,14 @@ export class OrderByPipe implements PipeTransform {
           value = value.sort((a, b) => a.category[0].localeCompare(b.category[0]));
         } else {
           value = value.sort((a, b) => b.category[0].localeCompare(a.category[0]));
+        }
+      }
+
+      if (sortBy === 'bySold') {
+        if (ascending) {
+          value = value.sort((a, b) => a.sold - b.sold);
+        } else {
+          value = value.sort((a, b) => b.sold - a.sold);
         }
       }
     }

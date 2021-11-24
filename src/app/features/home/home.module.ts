@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
-import { RightBarComponent } from './right-bar/right-bar.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { BestsellersComponent } from './components/bestsellers/bestsellers.component';
 import { HomeComponent } from './home.component';
@@ -12,7 +11,6 @@ import { LiveProjectBoxComponent } from './components/live-project-box/live-proj
 
 @NgModule({
   declarations: [
-    RightBarComponent,
     BestsellersComponent,
     HomeComponent,
     FreeContentBoxComponent,
